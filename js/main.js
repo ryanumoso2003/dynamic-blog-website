@@ -3,9 +3,15 @@ document.addEventListener("DOMContentLoaded", () => {
     const posts = JSON.parse(localStorage.getItem("posts")) || [];
   
     if (posts.length === 0) {
-      postsList.innerHTML = "<p>Create new Post!</p>";
-      return;
-    }
+        postsList.innerHTML = `
+          <div style="text-align: center; margin-top: 2rem;">
+            <p>No blog posts yet.</p>
+            <a href="new-post.html" class="new-post-cta">+ Create New Post</a>
+          </div>
+        `;
+        return;
+      }
+      
   
     posts.forEach((post) => {
       const postCard = document.createElement("div");
