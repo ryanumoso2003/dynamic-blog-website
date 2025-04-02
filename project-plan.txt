@@ -1,0 +1,24 @@
+# Project PLan:
+
+# Pages:
+index.html - Lists all blog posts
+new-post.html - Create a new post
+post.html - View and edit a specific post
+
+# JavaScript:
+main.js - Handles all blog actions using localStorage
+Main functions: createPost, getAllPosts, updatePost, deletePost
+
+localStorage - 
+{
+    id: uniqueID,
+    title: "Post Title",
+    content: "Post Content",
+    image: "optional-image-url",
+    timestamp: "Date string"
+}
+
+# Features:
+- add, view, edit, and delete blog posts
+- data seved in browser using localStorage
+- responsive layour for different devices
